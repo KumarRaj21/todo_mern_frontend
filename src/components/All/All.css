@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-container{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+        border: 2px sloid black;
+}
+.cardlist{
+    height:86%;
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+      gap:20px;
+      display:flex;
+    align-items: center;
+    flex-direction: column; 
+    overflow-y: auto;
+}
+.removeall{
+  height:10%;
+  width:95%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: column;
+    position:sticky;
+}
+.removeall button{
+  height:40px;
+  width:125px;
+    border-radius: 5px;
+    border: none;
+background-color:  rgb(0, 149, 255);
+color:#fff;
+}
+.home-empty{
+  height:100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+.home-empty button{
+  height:60px;
+  width:155px;
+    border-radius: 5px;
+    border: none;
+background-color:  rgb(0, 149, 255);
+color:#fff;
+font-size: 20px;
+}
+@media screen and (max-width:600px) and (min-width:280px){
+  .home-empty{
+    height:100%;
+    width:85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+  .cardlist{
+    padding-top:2px;
+    padding-bottom:2px;
+      gap:10px;
+  }
+  .removeall button{
+    height:40px;
+    width:100px;
+    border-radius:5px;
+    font-size: 12px;
+  }
+  .home-empty button{
+    height:40px;
+    width:145px;
+      border-radius: 8px;
+  font-size: 18px;
+  }
+}
+@media screen and (max-width:800px) and (min-width:600px)  {
+  .home-empty{
+   font-size: 16px;
+   height:100%;
+   width:85%;
+  }
+  .cardlist{
+    padding-top:5px;
+    padding-bottom:5px;
+      gap:13px;
+  }
+  .removeall button{
+    height:40px;
+    width:120px;
+    border-radius:8px;
+    font-size: 15px;
+  }
+  .home-empty button{
+    height:50px;
+    width:155px;
+      border-radius: 5px;
+  font-size: 20px;
+  }
+}
+@media screen and (max-width:1000px) and (min-width:800px)  {
+  .home-empty{
+   font-size: 20px;
+   height:100%;
+   width:85%;
+  }
+  .cardlist{
+    padding-top:5px;
+    padding-bottom:5px;
+      gap:13px;
+  }
+  .removeall button{
+    height:40px;
+    width:125px;
+    border-radius:8px;
+    font-size: 16px;
+  }
+  .home-empty button{
+    height:60px;
+    width:155px;
+      border-radius: 5px;
+  font-size: 20px;
+  }
+}

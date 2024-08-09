@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.popup{
+    position: fixed;
+    height:100vh;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+}
+.popup-in{
+    height:70%;
+    width:45%;
+    position: relative;
+        display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: column;
+    background: #fff;
+    border-radius: 16px;
+    padding-bottom: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.head{
+    height:20%;
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+.mid-div{
+    height:1.5%;
+    width:65%;
+    background-color: rgb(0, 149, 255);
+    border-radius: 50%;
+}
+.TodoForm{
+    height:75%;
+    width:90%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.head h2{
+    color:black;
+    font-size: 30px;
+    font-weight: 700;
+}
+.head button{
+    height:28px;
+    width:60px;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.head button:hover{
+    cursor: pointer;
+}
+.todo-input{
+    height:20%;
+    width:80%;
+    padding:8px;
+    outline: none;
+    font-size: 15px; 
+    border-radius: 10px;
+    background-color: #ebebeb;
+    border: none;
+}
+.description{
+     height:53%;
+    width:80%;
+    padding:8px;
+    outline: none;
+    font-size: 15px;
+    background-color:#ebebeb;
+    border-radius: 10px;
+    border: none;
+}
+.todo-btn{
+    height:17%;
+    width:40%;
+    border-radius: 10px;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border: none; 
+}
+.todo-btn:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:600px) and (min-width:280px){
+    .popup-in{
+       height:60%;
+        width:90%;
+        border-radius: 12px;
+    }
+    
+    .head{
+        height:20%;
+        width:90%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+    }
+    .head h2{
+        color:black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .todo-input{
+        height:20%;
+        width:90%;
+        padding:8px;
+        outline: none;
+        font-size: 16px; 
+        border-radius: 8px;
+        background-color: #ebebeb;
+        border: none;
+    }
+    .description{
+        height:53%;
+       width:90%;
+       padding:8px;
+       outline: none;
+       font-size: 16px;
+       background-color:#ebebeb;
+       border-radius: 8px;
+       border: none;
+   }
+   .todo-btn{
+       font-size: 17px; 
+   }
+}
+@media screen and (max-width:800px) and (min-width:600px)  {
+    .popup-in{
+        height:65%;
+        width:65%;
+        border-radius: 22px;
+    }
+    .head{
+        padding-left: 10px;
+    }
+    .head h2{
+        font-size: 23px;
+    }
+    .todo-input{
+        font-size: 17px; 
+        padding:10px;
+    }
+    .description{
+       padding:10px;
+       font-size: 17px;
+       border-radius: 8px;
+   }
+   .todo-btn{
+       font-size: 19px;
+   }
+}
+@media screen and (max-width:1000px) and (min-width:800px)  {
+    .popup-in{
+        height:65%;
+        width:65%;
+        border-radius: 22px;
+    }
+    .head{
+        padding-left: 10px;
+    }
+    .head h2{
+        font-size: 25px;
+    }
+    .todo-input{
+        font-size: 18px; 
+        padding:10px;
+    }
+    .description{
+       padding:10px;
+       font-size: 18px;
+       border-radius: 8px;
+   }
+   .todo-btn{
+       font-size: 20px;
+   }
+}
